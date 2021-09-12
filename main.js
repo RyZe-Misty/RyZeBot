@@ -14,4 +14,4 @@ client.events = new Discord.Collection();
 })
 
 
-client.login(config.token); //epic gaming test
+client.login(config.token);
