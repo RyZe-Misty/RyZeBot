@@ -13,19 +13,19 @@ module.exports = {
             if (!args[1]) {
                 memberTarget.roles.remove(mainRole.id);
                 memberTarget.roles.add(muteRole.id);
-                message.channel.send(`<@${memberTarget.user.id}> has been muted`);
+                message.reply(`<@${memberTarget.user.id}> has been muted`);
                 return
             }
             memberTarget.roles.remove(mainRole.id);
             memberTarget.roles.add(muteRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}`);
+            message.reply(`<@${memberTarget.user.id}> has been muted for ${ms(ms(args[1]))}`);
  
             setTimeout(function () {
                 memberTarget.roles.remove(muteRole.id);
                 memberTarget.roles.add(mainRole.id);
             }, ms(args[1]));
         }else{
-            message.channel.send("Cant mute that member. You sure you wrote the name correctly?")
+            message.reply("Cant mute that member. You sure you wrote the name correctly?")
         }
     }
 }

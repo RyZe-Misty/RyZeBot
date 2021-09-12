@@ -11,9 +11,9 @@ module.exports = {
 
             memberTarget.roles.remove(muteRole.id);
             memberTarget.roles.add(mainRole.id);
-            message.channel.send(`<@${memberTarget.user.id}> has been unmuted.`);
+            message.reply(`<@${memberTarget.user.id}> has been unmuted.`);
         }else{
-            message.channel.send("Cant unmute that member. You sure you wrote the name correctly?")
+            message.reply("Cant unmute that member. You sure you wrote the name correctly?")
         }
     }
 }

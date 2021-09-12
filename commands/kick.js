@@ -6,9 +6,9 @@ module.exports ={
         if(member){
             const memberTarget = message.guild.members.cache.get(member.id);
             memberTarget.kick();
-            message.channel.send("User has been kicked.");
+            message.reply("User has been kicked.");
         }else{
-            message.channel.send("You couldn't kick that member. Are you sure you typed the member's name correctly?")
+            message.reply("You couldn't kick that member. Are you sure you typed the member's name correctly?")
         }
 
     }
