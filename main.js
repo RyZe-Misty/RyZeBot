@@ -14,4 +14,4 @@ client.events = new Discord.Collection();
 })
 
 
-client.login(config.token); //test comment
+client.login(config.token);
