@@ -49,7 +49,7 @@ module.exports = (Discord, client, message) =>{
             if(!validPermissions.includes(perm)){
                 return console.log(`Invalid Permissions ${perm}`);
             }
-            if(!message.member.hasPermission(perm)){
+            if(!message.member.permissions.has(perm)){
                 invalidPerms.push(perm);
             }
         }
