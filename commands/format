@@ -1,6 +1,7 @@
 module.exports = {
     name: '',
     description: '',
+    permissions: ["", ""],
     async execute(client, message, args, Discord) {
 
     }

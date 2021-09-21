@@ -1,6 +1,7 @@
 module.exports ={
     name: 'ban',
     description: "This command kicks someone from the server.",
+    permissions: ["BAN_MEMBERS", "ADMINISTRATOR"],
     async execute(client, message, args, Discord) {
         const member = message.mentions.users.first();
         if(member){
